@@ -87,7 +87,7 @@ function Carousel() {
     if (paused) return;
     const interval = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
     // eslint-disable-next-line
   }, [index, paused]);
