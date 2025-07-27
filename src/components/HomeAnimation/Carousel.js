@@ -130,7 +130,7 @@ function Carousel() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -40 }}
             transition={{ type: "spring", stiffness: 80, damping: 20, duration: 0.5 }}
-            className="absolute inset-0 flex flex-col justify-center items-start bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 md:p-12 z-10"
+            className="absolute inset-0 bg-black/15 flex flex-col justify-center items-start bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 md:p-12 z-10"
           >
             <motion.h2
               className="text-2xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg"
