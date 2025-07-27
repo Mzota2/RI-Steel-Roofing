@@ -10,6 +10,11 @@ import HandleStaggerTransition from '@/utils/HandleStaggerTransition';
 import HandleCardAnimate from '@/utils/HandleCardAnimate';
 
 const extractTextFromHTML = (passedInHTML) => {
+  if (typeof window === 'undefined') {
+    // Server-side: use a regex to strip HTML tags
+    return passedInHTML.replace(/<[^>]+>/g, '');
+  }
+  // Client-side: use DOM
   const div = document.createElement('div');
   div.innerHTML = passedInHTML;
   return div.textContent || div.innerText || '';
