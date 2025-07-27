@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Contact2Icon, MailIcon, Dot, HomeIcon, InfoIcon, MenuIcon, MoveUpRight, Newspaper, ToolCaseIcon } from "lucide-react";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaBlog, FaWhatsapp } from "react-icons/fa6";
 
 const MobileMenu = ({showMenu, setShowMenu, buttonRef})=>{
   const menuRef = useRef(null);
@@ -49,6 +49,11 @@ const MobileMenu = ({showMenu, setShowMenu, buttonRef})=>{
         <Link onClick={handleHideMenuOption} href={'/contact'} className="flex items-center gap-2">
           <Contact2Icon size={24} className="h-6 w-6 text-primary" />
           <span className="">Contact Us</span>
+        </Link>
+
+        <Link onClick={handleHideMenuOption} href={'/blog'} className="flex items-center gap-2">
+          <FaBlog size={24} className="h-6 w-6 text-primary" />
+          <span className="">Blog</span>
         </Link>
 
         <hr className="my-4 border-t border-gray-200" />

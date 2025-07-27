@@ -12,7 +12,7 @@ function Hero() {
           <HandleAnimateUp>
             <div className="md:hidden order-2 flex flex-col gap-4 max-w-[600px] mb-5">
             <div className="bg-white text-black p-4 rounded-sm shadow-md box-shadow-lg flex flex-col items-center justify-center">
-              <h1 className="text-2xl md:text-4xl font-bold mb-4">
+              <h1 className="text-xl text-primary font-bold mb-4">
                 Welcome to R & I Steel Roofing
               </h1>
               <div className="h-12 bg-primary mx-auto w-12 rounded-full flex items-center justify-center">

@@ -94,12 +94,12 @@ function Carousel() {
 
   return (
     <div
-      className="flex flex-col gap-4 w-full"
+      className="flex flex-col gap-4 w-full h-[80vh] md:min-h-[500px] relative"
     >
       <div 
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      className="relative w-full h-[200px] md:h-[500px] overflow-hidden rounded-md">
+      className="relative w-full h-full overflow-hidden rounded-md">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
             key={index}
