@@ -118,6 +118,8 @@ function Carousel() {
               position: 'absolute',
             }}
             transition={{ type: "tween", duration: 0.5 }}
+            loading='lazy'
+            fetchPriority={index === 0 ?'high':"auto"}
           />
         </AnimatePresence>
         {/* Overlay for text and button */}
