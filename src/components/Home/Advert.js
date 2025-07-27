@@ -67,7 +67,6 @@ function Advert() {
           >
             <video
               src="/market.mp4"
-              controls
               autoPlay
               loop
               muted
