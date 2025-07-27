@@ -6,9 +6,9 @@
   --background: #ece4d1;
   --foreground: rgb(3, 3, 3);
   --primary: #db5b18;
-  --secondary-red: rgb(176, 127, 118);
-  --secondary-orange: rgb(223, 143, 17);
-  --secondary-gray: rgb(195, 175, 157);
+  --secondary-red: #b07f76;
+  --secondary-orange: #df8f11;
+  --secondary-gray: #c3af9d;
   --font-montserrat: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
 }

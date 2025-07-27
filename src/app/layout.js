@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import "aos/dist/aos.css";
 import Help from "@/components/Help/Help";
+import Greetings from "@/components/Greetings/Greetings";
 export const metadata = {
   title: {
     default: "R & I Steel Roofing",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
+        <Greetings/>
         <Help/>
         <Navbar />
         {children}
