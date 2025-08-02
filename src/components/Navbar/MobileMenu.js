@@ -51,7 +51,7 @@ const MobileMenu = ({showMenu, setShowMenu, buttonRef})=>{
           <span className="">Contact Us</span>
         </Link>
 
-        <Link onClick={handleHideMenuOption} href={'/blog'} className="flex items-center gap-2">
+        <Link onClick={handleHideMenuOption} href={'/team'} className="flex items-center gap-2">
           <FaBlog size={24} className="h-6 w-6 text-primary" />
           <span className="">Blog</span>
         </Link>
@@ -60,7 +60,7 @@ const MobileMenu = ({showMenu, setShowMenu, buttonRef})=>{
 
         <div className="w-full overflow-x-auto flex items-center justify-between">
           <Link className="text-sm" onClick={handleHideMenuOption} href='mailto:info@risteelroofing.com'> <MailIcon size={24} className='text-primary'/> info@risteelroofing.com</Link>
-          <Link className='text-sm' onClick={handleHideMenuOption} href='https://wa.me/265991234567'> <FaWhatsapp size={24} className='text-primary'/> +265 981 56 78 68</Link>
+          <Link className='text-sm' onClick={handleHideMenuOption} href='https://wa.me/265889397498'> <FaWhatsapp size={24} className='text-primary'/> +265 981 56 78 68</Link>
         </div>
 
       </div>

@@ -7,6 +7,7 @@ import HandleStaggerTransition from '@/utils/HandleStaggerTransition';
 import HandleElementAnimateScale from '@/utils/HandleElementAnimateScale';
 import HandleElementAnimateFadeRight from '@/utils/HandleElementAnimateFadeRight';
 import HandleElementAnimateFade from '@/utils/HandleElementAnimateFade';
+import Link from 'next/link';
 function CallToAction() {
   return (
     <>
@@ -48,15 +49,18 @@ function CallToAction() {
           <HandleElementAnimateScale
             styles="flex flex-col md:flex-row items-center justify-between gap-4 mt-4"
           >
-            <Button
+            <Link href='/contact'>
+              <Button
               title="Get Your Free Quote"
               styles="bg-secondary-red text-white md:px-8 py-3 rounded-lg shadow-lg  text-lg font-semibold"
             />
+            </Link>
+            
             <span className="text-black/70 text-base md:text-lg">
               Or call us directly at{" "}
-              <a href="tel:+265999999999" className="text-primary font-bold underline hover:text-secondary-orange transition-colors">
+              <Link href="tel:+265999999999" className="text-primary font-bold underline hover:text-secondary-orange transition-colors">
                 +265 999 999 999
-              </a>
+              </Link>
             </span>
           </HandleElementAnimateScale>
           <HandleElementAnimateFade

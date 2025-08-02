@@ -8,7 +8,7 @@ function HandleElementAnimateRight({children, styles}) {
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        viewport={{ once: false }}
+        viewport={{ once:false, amount: 0.3 }}
         className={styles}
     >
         {children}

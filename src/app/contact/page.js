@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div className=''>
       <HandlePageHeader Icon={<ContactIcon size={32} className='text-4xl text-primary' />} title='CONTACT US' description='Get in touch with us for any inquiries or support.'/>
-      <section className=' flex flex-col gap-4 mt-5 '>
+      <section className=' flex flex-col gap-4 mt-5 py-8'>
           
           <HandleElementAnimateRight styles='bg-white md:rounded-md w-full  max-w-[1200px] flex mx-auto px-5 py-4 flex-col gap-4'>
               <HandleElementAnimateFadeRight styles='font-semibold text-lg md:text-2xl'>How to find us ?</HandleElementAnimateFadeRight>
@@ -24,9 +24,9 @@ function Contact() {
                     <span className='text-white'>+265 999 999 999</span>
                   </div> */}
                   <HandleElementAnimateFade styles='flex flex-col gap-2'>
-                    <Link href='tel:+265999999999' className='text-white flex items-center gap-2'><Phone size={16}/> +265 999 999 999</Link>
+                    <Link href='tel:+265889397498' className='text-white flex items-center gap-2'><Phone size={16}/> +265 999 999 999</Link>
                     <Link href='mailto:info@ristee.com' className='text-white underline flex items-center gap-2'> <Mail size={16}/> info@ristee.com</Link>
-                    <Link href='https://wa.me/+265999999999' className='text-white underline flex items-center gap-2'> <FaWhatsapp size={16}/> WhatsApp Us</Link>
+                    <Link href='https://wa.me/+265889397498' className='text-white underline flex items-center gap-2'> <FaWhatsapp size={16}/> WhatsApp Us</Link>
                     <div className='flex items-center gap-2 text-white'>
                       <LocateIcon size={16}/>
                       <div className='flex flex-col'>

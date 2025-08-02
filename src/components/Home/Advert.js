@@ -8,7 +8,7 @@ function Advert() {
   const route = useRouter();
   return (
     <>
-        <section className='w-full bg-secondary-orange px-5 md:px-0 py-12 mt-8'>
+        <section className='w-full bg-secondary-orange px-5 md:px-0 py-12'>
         {/* Video & Animated Text */}
         <div className="flex flex-col mx-auto max-w-[1200px] md:flex-row md:justify-center gap-8">
           <div

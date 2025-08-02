@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 function Footer() {
   return (
-    <>
+    <section className='mt-auto'>
        {/* Footer */}
              <footer className="py-4 px-5 bg-secondary-gray/60">
                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto">
@@ -19,11 +19,11 @@ function Footer() {
                  <div className="flex flex-col gap-2">
                    <h3 className="text-lg font-semibold text-black/90">Contact</h3>
                    <Link href={'mailto:info@riseteel.com'} className="text-primary underline">Email: info@riseteel.com</Link>
-                   <Link href="https://wa.me/265991234567" target="_blank" className="text-primary underline">WhatsApp</Link>
-                   <Link href="tel:+265991234567" className="text-primary underline">Call Us</Link>
-                   <Link href="https://www.facebook.com/risteel" target="_blank" className="text-primary underline">Facebook</Link>
-                   <Link href="https://www.instagram.com/risteel" target="_blank" className="text-primary underline">Instagram</Link>
-                   <Link href="https://www.linkedin.com/company/risteel" target="_blank" className="text-primary underline">LinkedIn</Link>
+                   <Link href="https://wa.me/265889397498" target="_blank" className="text-primary underline">WhatsApp</Link>
+                   <Link href="tel:+265889397498" className="text-primary underline">Call Us</Link>
+                   <Link href="https://www.facebook.com/share/1JJxmE3o3M/" target="_blank" className="text-primary underline">Facebook</Link>
+                   <Link href="https://www.instagram.com/r_i_steel_roofing?igsh=cjNtbzQ4am1nYWk1" target="_blank" className="text-primary underline">Instagram</Link>
+                   <Link href="https://www.linkedin.com/company/risteelroofing/" target="_blank" className="text-primary underline">LinkedIn</Link>
                  </div>
        
                  {/* Quick Links */}
@@ -51,7 +51,7 @@ function Footer() {
                
              </footer>
              <div className="bg-secondary-red h-1 w-full"></div> 
-    </>
+    </section>
   )
 }
 

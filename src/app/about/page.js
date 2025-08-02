@@ -9,6 +9,7 @@ import HandleElementAnimateLeft from '@/utils/HandleElementAnimateLeft'
 import HandleElementAnimateRight from '@/utils/HandleElementAnimateRight'
 import HandleStaggerTransition from '@/utils/HandleStaggerTransition'
 import HandleCardAnimate from '@/utils/HandleCardAnimate'
+import HandleLoadingElement from '@/utils/HandleLoadingElement'
 
 
 function About() {
@@ -55,10 +56,34 @@ function About() {
             description:`To become the leading provider of innovative steel roofing and fabrication solutions in Malawi, recognised for our superior quality, reliability, and exceptional customer service.`
         }
     ]
+    const teamMembers = [
+    {
+        name: "John Doe",
+        position: "CEO & Founder",
+        image: "/image1.jpg",
+    },
+    {
+        name: "Jane Smith",
+        position: "Operations Manager",
+        image: "/image2.jpg",
+    },
+    {
+        name: "Mike Johnson",
+        position: "Lead Roofer",
+        image: "/image2.jpg",
+    },
+    {
+        name: "Emily Brown",
+        position: "Customer Relations",
+        image: "/image1.jpg",
+    },
+];
   return (
     <div>
-        <HandlePageHeader Icon={<FaSteam className='text-4xl text-primary' />} title={'ABOUT US'} description={'Learn more about us'} />
-
+        <HandleLoadingElement>
+            <HandlePageHeader Icon={<FaSteam className='text-4xl text-primary' />} title={'ABOUT US'} description={'Learn more about us'} />
+        </HandleLoadingElement>
+        
         {/* Overview */}
         <div className='px-5 py-4 md:px-0 max-w-[1200px] mx-auto'>
             <HandleElementAnimateRight styles='flex flex-col gap-4 max-w-[800px]'>
@@ -135,6 +160,36 @@ function About() {
             </div>
 
         </div>
+
+        {/* Team Members Section */}
+        <section className='w-full bg-white py-8 mt-8'>
+            <div className=" max-w-[1200px] px-5 md:px-0 mx-auto">
+            <div className='my-5 flex flex-col gap-4'>
+                <h2 className='font-semibold text-lg'>Meet Our Team</h2>
+                <p>{`Meet our team of skilled professionals who are dedicated to delivering exceptional service to our valued clients.`}</p>
+            </div>
+            <HandleStaggerTransition styles="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                {teamMembers.map((member, idx) => (
+                    <HandleCardAnimate key={idx}>
+                        <div className="bg-background rounded-lg shadow p-6 flex flex-col items-center">
+                            <div className="w-[200px] h-[200px] relative mb-4">
+                                <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    height={200}
+                                    width={200}
+                                    className="rounded-full h-full w-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-lg font-semibold">{member.name}</h3>
+                            <p className="text-primary font-medium">{member.position}</p>
+                        </div>
+                    </HandleCardAnimate>
+                ))}
+            </HandleStaggerTransition>
+        </div>
+        </section>
+        
 
     </div>
   )

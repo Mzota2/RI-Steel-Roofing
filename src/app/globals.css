@@ -4,6 +4,7 @@
 
 :root {
   --background: #ece4d1;
+  --secondary-blue:#0303d1;
   --foreground: rgb(3, 3, 3);
   --primary: #db5b18;
   --secondary-red: #b07f76;
@@ -16,6 +17,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-secondary-blue:var(--secondary-blue);
   --color-primary: var(--primary);
   --color-secondary-red: var(--secondary-red);
   --color-secondary-orange: var(--secondary-orange);

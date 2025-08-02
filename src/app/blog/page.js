@@ -57,8 +57,11 @@ function Blog() {
       {/* Blogs */}
 
       <div className='px-0 md:px-0 py-5 bg-white/60'>
-        <HandleElementAnimateFade styles='px-5 py-4 flex flex-col gap-4 max-w-[1200px] mx-auto'>
-          <h2 className='font-medium text-lg'>Browse Our Stories, Updates and Promotions</h2>
+        <div className='px-5 py-4 flex flex-col gap-4 max-w-[1200px] mx-auto'>
+          <HandleElementAnimateFade>
+             <h2 className='font-medium text-lg'>Browse Our Stories, Updates and Promotions</h2>
+          </HandleElementAnimateFade>
+         
           <HandleElementAnimateFade styles='flex items-center gap-4 overflow-x-auto'>
             <button className='px-4 text-sm md:text-base rounded-sm hover:bg-secondary-red border-none py-2 bg-primary text-white'>Stories</button>
             <button className='px-4 text-sm md:text-base  rounded-sm hover:bg-primary border-none py-2 bg-background text-black'>Promotions</button>
@@ -93,7 +96,7 @@ function Blog() {
               </HandleCardAnimate>
             ))}
           </HandleStaggerTransition>
-        </HandleElementAnimateFade>
+        </div>
       </div>
     </div>
   )

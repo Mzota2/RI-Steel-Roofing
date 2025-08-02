@@ -8,7 +8,7 @@ function HandleElementAnimateFade({children, styles}) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.6 }}
-        viewport={{ once: false }}
+        viewport={{ once:false, amount: 0.3}}
         className={styles}
     >
         {children}

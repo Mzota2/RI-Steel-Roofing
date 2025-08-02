@@ -8,6 +8,7 @@ import HandleStaggerTransition from '@/utils/HandleStaggerTransition';
 import HandleCardAnimate from '@/utils/HandleCardAnimate';
 import HandleElementAnimateRight from '@/utils/HandleElementAnimateRight';
 import HandleElementAnimateScale from '@/utils/HandleElementAnimateScale';
+import HandleLoadingElement from '@/utils/HandleLoadingElement';
 function Services() {
     const services = [
     {
@@ -57,15 +58,16 @@ function Services() {
                     <HandleElementAnimateRight styles="flex  gap-4">
                       <div>
                           <h3 className="text-lg md:text-2xl font-semibold">{service.title}</h3>
-                          <p className="text-black/80">{service.description}</p>
+                          <p className="text-black/80 max-w-[800px]">{service.description}</p>
                       </div>
                     </HandleElementAnimateRight>
                     
                     <hr className="my-2 border-primary/70" />
 
-                    <HandleStaggerTransition styles='grid grid-cols-1 md:grid-cols-3'>
+                    <HandleStaggerTransition styles='grid grid-cols-1 md:grid-cols-3 gap-4'>
                         {service.images.map((image, index) => (
-                          <HandleCardAnimate key={index} styles='bg-white/30 p-2 md:p-4 rounded-md shadow-sm drop-shadow-2xl'>
+                          <HandleLoadingElement  key={index}>
+                            <HandleCardAnimate styles='bg-white/30 p-2 md:p-4 rounded-md shadow-sm drop-shadow-2xl'>
                               <Image 
                                 src={image} 
                                 alt={`${service.title} image ${index + 1}`} 
@@ -73,6 +75,8 @@ function Services() {
                                 height={200} 
                                 className='w-full h-full object-cover rounded-md cursor-pointer hover:animate-pulse focus:animate-pulse' />
                           </HandleCardAnimate>
+                          </HandleLoadingElement>
+                          
                             
                         ))}
                     </HandleStaggerTransition>

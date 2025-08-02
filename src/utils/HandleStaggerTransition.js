@@ -16,7 +16,7 @@ function HandleStaggerTransition({children, styles}) {
             }
         }
         }}
-        viewport={{ once: false }}>
+        viewport={{once:false, amount: 0.3 }}>
             {children}
     </motion.div>
   )

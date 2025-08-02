@@ -40,10 +40,10 @@ const services = [
     }
   ]
   return (
-    <>
-    <section className="py-4 px-5 md:px-0 max-w-[1200px] mx-auto">
+    <section className='w-full bg-white py-8'>
+    <div className="py-4 px-5 md:px-0 max-w-[1200px] mx-auto">
         <HandleAnimateUp>
-            <div>
+            <div className='text-center flex flex-col gap-2'>
                 <h2 className="text-2xl font-bold mb-4">What We Offer</h2>
                 <p>We provide a wide range of steel and roofing solutions to meet your needs.</p>
             </div>
@@ -57,8 +57,8 @@ const services = [
            <ServicesCard key={index} index={index} service={service} />
           ))}
         </HandleStaggerTransition>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 
